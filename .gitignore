@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Study Log application data
+study_sessions.json
+
+# Temporary JSON error-handling tests
+invalid_test.json
+json_error_test.py
