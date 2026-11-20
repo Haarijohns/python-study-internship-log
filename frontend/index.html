@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Task & Internship Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Student Task & Internship Tracker</h1>
+
+      <nav>
+        <a href="#add-task">Add Task</a>
+        <a href="#my-tasks">My Tasks</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="add-task">
+        <h2>Add Task</h2>
+
+        <form id="add-task-form">
+          <div>
+            <label for="task-title">Task Title:</label>
+            <input
+              type="text"
+              id="task-title"
+              name="title"
+              placeholder="Enter your task"
+              required />
+          </div>
+
+          <div>
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due_date" />
+          </div>
+
+          <div>
+            <label for="category">Category:</label>
+            <input
+              type="text"
+              id="category"
+              name="category"
+              placeholder="e.g. Internship, M.Tech" />
+          </div>
+
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section id="my-tasks">
+        <h2>My Tasks</h2>
+        <p id="empty-state" hidden>
+          No tasks yet. Use the form above to create your first task.
+        </p>
+        <ul>
+          <li>
+            <article>
+              <h3>Complete Python Assignment</h3>
+              <p>Status: Pending</p>
+              <p>Category: M.Tech</p>
+              <p>Due Date: 2026-11-25</p>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <h3>Prepare Internship Report</h3>
+              <p>Status: Completed</p>
+              <p>Category: Internship</p>
+              <p>Due Date: 2026-11-22</p>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <h3>Study HTML Forms</h3>
+              <p>Status: Pending</p>
+              <p>Category: Web Development</p>
+              <p>Due Date: 2026-11-28</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
